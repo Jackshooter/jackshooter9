@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> A Dog's Life </title>
+	<link rel="icon" href ="dog fav.png" type="image/x-xicon">
+	<meta charset="utf-8">
+	<style>
+		
+		.head { overflow: hidden;
+				background-color: #72380a;
+				position: fixed; 
+				top: 0; 
+				width: 100%;
+				}
+		.training {	float: left;
+					margin: auto;
+					padding-right: 100px;
+					padding-left:25px;}
+		.training2 {float: right;
+					clear: right;
+					margin: auto;
+					padding-left: 100px;
+					margin-top: 40px;
+					padding-right:25px;
+					}
+		.bgtraining {background-color:#ffe7d8;
+					margin: auto;
+					padding: 20px;}
+		.bgtraining2 {	background-color:#edba9a;
+						margin: auto;
+						padding-left:300;
+						padding:20px;
+						color: #FFFFFF;}
+		.hometop{ position: absolute;
+						top:350px;
+						opacity: 0.4;
+						text-align: center;
+						width:1530px;
+						height:150px;
+						background-color: white;
+						font-size: 350%;}
+		.mySlides {display:block;}
+		.w3-content{max-width:auto;
+					margin: auto;
+					padding-top:125px;
+					}
+		.w3-animate-right{	position:relative;
+							animation:animateright 2s;
+							}
+		
+		header { text-align: center;
+				 color: #ffb77f;
+				 }
+		body { background-color: #99643b;
+				margin:0;}
+		p {font-size:80%;}
+		nav {   background-color: #ffb172; 
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				text-align: center; 
+				padding-right: 2em;
+				position: relative;} 
+ 	    nav ul { list-style-type: none; 
+					margin: 0;}
+		nav li { padding: 0.5em;
+				 display: inline-block;
+				 font-size: 150%;}
+		nav a { text-decoration: none; 
+				display: block;}
+		nav a:link { color: #FFFFFF; }
+		nav a:visited { color: #EAEAEA; }
+		nav a:hover {  color: #D3DBEB;}
+		footer { background-color:#72380a;
+				 font-size:100%;
+				 text-align: center;
+				 padding: 10px;
+				 clear: both;}
+				 
+		@keyframes animateright{from{right:-300px;opacity:0.5} to{right:0;opacity:1};}
+
+
+	</style>
+</head>
+<body>
+	<header class="head">
+	<h1>A Dog's Life</h1>
+	<nav >
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="daycare.html">DayCare</a></li>
+			<li><a href="grooming.html">Grooming</a></li>
+			<li><a href="training.html">Training</a></li>
+			<li><a href="vacation.html">Vacation</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+	
+
+	</header>
+	<main>
+	<div class="w3-content" >
+		<img class="mySlides w3-animate-right" src="dog_training.png" width="1530" height="800">
+		<img class="mySlides w3-animate-right" src="dog_training02.jpg" width="1530" height="800">
+		<img class="mySlides w3-animate-right" src="dog_training03.jpeg" width="1530" height="800">
+		<img class="mySlides w3-animate-right" src="dog_training04.jpeg" width="1530" height="800">
+	</div>		
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {x[i].style.display = "none";  
+										}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3500);    
+		}
+	</script>
+
+	<div>
+		<span class="hometop">Dog Training</span> 
+	</div>
+	
+	
+	<div class="bgtraining">
+		<img class="training" src="training01.jpg" width="220" height="320" style="padding-top:1px;">
+		<h2> Basic Training <h2>
+		<ul type="disc">
+			<li> Want to make life more interesting? Want to let your dog to become very powerful? You need training dog now! You can teach your dog some basic intrustion such as 
+				 patty cake, called come in and called standing. </li>
+			<li> Training your dog with 1-2hours everyday. </li>
+			<li> Rigorously training your dog and don't give up halfway. </li>
+		</ul>
+		<br><br><br>
+		
+	</div>
+	<div class="bgtraining2">
+		<img class="training2" src="training02.jpg" width="320" height="220" style="padding-top:1px;">
+		<h2> Advance Training <h2>
+		<p> After basic training, your dog can listen basic intrustion and do the action.So now, you can show off your dog to your friends. However,
+			if you still make your dog more powerful, you can enchance and teach more hard intruction to your dog.  </p>
+		<p> You can teach your dog to catch in promenade.You also can teach your dog how to take its' bow when its want to eat. </p> 
+		<br><br><br><br><br>
+	</div>
+		
+	<div class="bgtraining">
+		<img class="training" src="training03.jpg" width="220" height="320" style="padding-top:1px;">
+		<h2> Tricks Training <h2>
+		<p> Dog is very cute, right? But if dog know some tricks, it will more lovely! Thus, you can teach some tricks with your dog. This not only 
+			enchance your emotion with dog, but also ruduce stress anf funny. </p>
+		<br><br><br><br><br><br>
+		
+	</div>
+	<div class="bgtraining2">
+		<img class="training2" src="training04.jpg" width="320" height="220" style="padding-top:1px;">
+		<h2> Canine Sports Training <h2>
+		<p> As a owner, who is wish their dog can accompany with them long time while dog's life is 10~20 years and more dealth in disease. Thus, canine soprts training is a 
+			better function for its's heavy. </p>
+		<p> Morever, sporter also can training with their dog for increase degree of adaptability between owner and pet.  </p>
+		<br><br><br><br><br><br><br><br><br><br>
+	</div>
+	</main>
+	<footer>
+		
+		Copyright &copy; 2017 RCKN
+	</footer>
+</body>
+</html>
